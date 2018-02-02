@@ -1,6 +1,8 @@
 source $HOME/.config/antigen/antigen.zsh
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 export PATH=$PATH:~/bin
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
