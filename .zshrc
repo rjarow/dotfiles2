@@ -1,5 +1,6 @@
 source $HOME/.config/antigen/antigen.zsh
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
+export PATH=$PATH:~/bin
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -18,6 +19,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jimeh/zsh-peco-history
+antigen bundle djui/alias-tips
 
 # Load the theme.
 antigen theme bhilburn/powerlevel9k powerlevel9k
