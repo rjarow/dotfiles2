@@ -13,6 +13,7 @@ antigen bundle docker
 antigen bundle z
 antigen bundle common-aliases
 antigen bundle command-not-found
+antigen bundle sudo
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
