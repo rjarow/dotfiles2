@@ -22,6 +22,7 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jimeh/zsh-peco-history
 antigen bundle djui/alias-tips
+antigen bundle zsh-users/zsh-completions
 
 # Load the theme.
 antigen theme bhilburn/powerlevel9k powerlevel9k
