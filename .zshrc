@@ -1,7 +1,10 @@
+# Sources and Variables
 source $HOME/.config/antigen/antigen.zsh
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 export PATH=$PATH:~/bin
 export TERM="xterm-256color"
+
+# Aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
@@ -17,7 +20,8 @@ antigen bundle command-not-found
 antigen bundle sudo
 
 # Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+#antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zdharma/fast-syntax-highlighting
 
 # STUFF
 antigen bundle zsh-users/zsh-history-substring-search 
@@ -27,7 +31,13 @@ antigen bundle djui/alias-tips
 antigen bundle zsh-users/zsh-completions
 
 # Load the theme.
-antigen theme bhilburn/powerlevel9k powerlevel9k
+
+# antigen theme bhilburn/powerlevel9k powerlevel9k
+
+# Simple theme  for when no nerd font
+# antigen bundle davydovanton/excess.zsh-theme
+antigen bundle jimeh/plain.zsh-theme
+antigen theme jimeh/plain.zsh-theme
 
 # Tell Antigen that you're done.
 antigen apply
