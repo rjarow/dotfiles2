@@ -1,6 +1,7 @@
 # Sources and Variables
 source $HOME/.config/antigen/antigen.zsh
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
+#POWERLEVEL9K_MODE='nerdfont-complete'
 export PATH=$PATH:~/bin
 export TERM="xterm-256color"
 
@@ -32,12 +33,21 @@ antigen bundle zsh-users/zsh-completions
 
 # Load the theme.
 
-# antigen theme bhilburn/powerlevel9k powerlevel9k
-
-# Simple theme  for when no nerd font
+# Powerline based themes
+antigen theme bhilburn/powerlevel9k powerlevel9k
+#
+#
+# Simple themes  for when no nerdfont powerline
 # antigen bundle davydovanton/excess.zsh-theme
-antigen bundle jimeh/plain.zsh-theme
-antigen theme jimeh/plain.zsh-theme
+#
+# antigen bundle jimeh/plain.zsh-theme
+# antigen theme jimeh/plain.zsh-theme
+#
+# antigen theme gianu
+# antigen theme noplay/lagune lagune
+# antigen bundle yous/lime
+# antigen bundle martinrotter/powerless
+
 
 # Tell Antigen that you're done.
 antigen apply
