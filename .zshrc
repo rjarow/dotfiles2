@@ -35,6 +35,7 @@ antigen bundle zsh-users/zsh-completions
 
 # Powerline based themes
 antigen theme bhilburn/powerlevel9k powerlevel9k
+#antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 #
 #
 # Simple themes  for when no nerdfont powerline
