@@ -4,9 +4,10 @@ POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 #POWERLEVEL9K_MODE='nerdfont-complete'
 export PATH=$PATH:~/bin
 export TERM="xterm-256color"
-
+compctl -g '~/.teamocil/*(:t:r)' teamocil
 # Aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 
 
 # Load the oh-my-zsh's library.
@@ -35,7 +36,7 @@ antigen bundle zsh-users/zsh-completions
 
 # Powerline based themes
 antigen theme bhilburn/powerlevel9k powerlevel9k
-#antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+# antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 #
 #
 # Simple themes  for when no nerdfont powerline
