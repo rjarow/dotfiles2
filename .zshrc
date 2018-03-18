@@ -3,7 +3,7 @@ source $HOME/.config/antigen/antigen.zsh
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 #POWERLEVEL9K_MODE='nerdfont-complete'
 export PATH=$PATH:~/bin
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
 compctl -g '~/.teamocil/*(:t:r)' teamocil
 
 # Aliases
