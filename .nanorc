@@ -79,7 +79,7 @@ include "~/.nano/yaml.nanorc"
 include "~/.nano/yum.nanorc"
 include "~/.nano/zsh.nanorc"
 set nonewlines
-set autoindent
+#set autoindent
 set tabstospaces
 set tabsize 2
 set casesensitive

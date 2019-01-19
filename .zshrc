@@ -9,6 +9,15 @@ compctl -g '~/.teamocil/*(:t:r)' teamocil
 # Aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+ssh() {
+    if [ "$(ps -p $(ps -p $$ -o ppid=) -o comm=)" = "tmux" ]; then
+        tmux rename-window "$(echo $* | cut -d . -f 1)"
+        command ssh "$@"
+        tmux set-window-option automatic-rename "on" 1>/dev/null
+    else
+        command ssh "$@"
+    fi
+}
 
 
 # Load the oh-my-zsh's library.
@@ -34,6 +43,7 @@ antigen bundle djui/alias-tips
 antigen bundle zsh-users/zsh-completions
 antigen bundle chrissicool/zsh-256color
 
+antigen bundle joel-porquet/zsh-dircolors-solarized.git
 # Load the theme.
 
 # Powerline based themes
