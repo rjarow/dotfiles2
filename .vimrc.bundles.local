@@ -1,1 +1,2 @@
-Bundle 'pearofducks/ansible-vim'
+Plugin 'pearofducks/ansible-vim'
+Plugin 'ekalinin/Dockerfile.vim'
