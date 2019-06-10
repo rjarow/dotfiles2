@@ -48,6 +48,7 @@ antigen bundle joel-porquet/zsh-dircolors-solarized.git
 
 # Powerline based themes
 # antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme romkatv/powerlevel10k
 # antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 # antigen theme https://github.com/wadehammes/wade.zsh-theme wade.zsh-theme
 #
@@ -62,7 +63,7 @@ antigen bundle joel-porquet/zsh-dircolors-solarized.git
 #
 # antigen theme gianu
 # antigen theme noplay/lagune lagune
-antigen theme https://github.com/win0err/aphrodite-terminal-theme
+# antigen theme https://github.com/win0err/aphrodite-terminal-theme
 # antigen bundle yous/lime
 # antigen bundle martinrotter/powerless
 
