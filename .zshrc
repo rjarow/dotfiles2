@@ -7,11 +7,12 @@ export PATH=$PATH:~/bin
 compctl -g '~/.teamocil/*(:t:r)' teamocil
 
 # if tmux is installed, run it on login.
-if [ -z "$TMUX" ]
-then
-    tmux attach -t MAIN || tmux new -s MAIN
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+	if [ -z "$TMUX" ]
+	then
+    	tmux attach -t MAIN || tmux new -s MAIN
+	fi
 fi
-
 
 # Aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
