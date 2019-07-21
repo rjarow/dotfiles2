@@ -6,7 +6,8 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-XTerm*background:        #222D31
+! XTerm*background:        #222D31
+XTerm*background:        #000000
 XTerm*foreground:        #d8d8d8
 XTerm*pointerColor:      #1ABB9B
 XTerm*faceName:          Fixed
@@ -14,48 +15,50 @@ XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
-! special
-*.foreground:   #d9d8d8
-*.background:   #231f20
-*.cursorColor:  #d9d8d8
+!! special
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
 
 ! black
-*.color0:       #231f20
-*.color8:       #737171
+*.color0:       #393939
+*.color8:       #474747
 
 ! red
-*.color1:       #ee2e24
-*.color9:       #ee2e24
+*.color1:       #da4939
+*.color9:       #ff6c5c
 
 ! green
-*.color2:       #00853e
-*.color10:      #00853e
+*.color2:       #9acc79
+*.color10:      #8fb676
 
 ! yellow
-*.color3:       #ffd204
-*.color11:      #ffd204
+*.color3:       #d0d26b
+*.color11:      #c8bc45
 
 ! blue
-*.color4:       #009ddc
-*.color12:      #009ddc
+*.color4:       #6d9cbe
+*.color12:      #d0d0ff
 
 ! magenta
-*.color5:       #98005d
-*.color13:      #98005d
+*.color5:       #9f5079
+*.color13:      #a761c2
 
 ! cyan
-*.color6:       #85cebc
-*.color14:      #85cebc
+*.color6:       #435d75
+*.color14:      #6e98a4
 
 ! white
-*.color7:       #d9d8d8
-*.color15:      #ffffff
+*.color7:       #c2c2c2
+*.color15:      #c2c2c2
+
+
 
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
 
 ! URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
-URxvt.font:			   xft:LiterationMono Nerd Font:size=12
+URxvt.font:			   xft:Hack Nerd Font Mono:size=12
 
 ! alternative font settings with 'terminus':
 ! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
@@ -63,7 +66,7 @@ URxvt.font:			   xft:LiterationMono Nerd Font:size=12
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#222D31
+URxvt.background:                 [95]#222222
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
