@@ -6,14 +6,6 @@ export PATH=$PATH:~/bin
 #export TERM="xterm-256color"
 compctl -g '~/.teamocil/*(:t:r)' teamocil
 
-# if tmux is installed, run it on login.
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-	if [ -z "$TMUX" ]
-	then
-    	tmux attach -t MAIN || tmux new -s MAIN
-	fi
-fi
-
 # Aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
