@@ -338,7 +338,7 @@ bar {
 
         colors {
         # <bar>
-        background $term_background #000000
+        background $term_background
         separator  #444444
         statusline #eeeeee
 
