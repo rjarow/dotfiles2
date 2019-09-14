@@ -2,6 +2,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 #exec --no-startup-id ~/.screenlayout/just_main_2560.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -20,7 +21,7 @@ hide_edge_borders none
 bindsym $mod+u border none
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
-
+bindsym $mod+p exec --no-startup-id $HOME/.config/polybar/launch.sh
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font xft:URWGothic-Book 11
@@ -47,10 +48,10 @@ bindsym $mod+x exec --no-startup-id rofi -show run
 ################################################################################################
 
 exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-#exec --no-startup-id pulseaudio
+#bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
-#bindsym $mod+Ctrl+m exec pavucontrol
+bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
 
@@ -322,33 +323,33 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3status
-	position bottom
+# bar {
+#         i3bar_command i3bar
+# 	status_command i3status
+# 	position bottom
 
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
+# ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+# #	tray_output primary
+# #	tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
+# 	bindsym button4 nop
+# 	bindsym button5 nop
+# #   font xft:URWGothic-Book 11
+# 	strip_workspace_numbers yes
 
-        colors {
-        # <bar>
-        background $term_background
-        separator  #444444
-        statusline #eeeeee
+#         colors {
+#         # <bar>
+#         background $term_background
+#         separator  #444444
+#         statusline #eeeeee
 
-        # <workclass>      <border> <bg> <text>
-        focused_workspace  #196584 #005577 #eeeeeeC
-        active_workspace   #565656 #444444 #eeeeee
-        inactive_workspace #373737 #222222 #bbbbbb
-        urgent_workspace   #7E1919 #770000 #eeeeee
-        }
-}
+#         # <workclass>      <border> <bg> <text>
+#         focused_workspace  #196584 #005577 #eeeeeeC
+#         active_workspace   #565656 #444444 #eeeeee
+#         inactive_workspace #373737 #222222 #bbbbbb
+#         urgent_workspace   #7E1919 #770000 #eeeeee
+#         }
+# }
 
 
 #     colors {
