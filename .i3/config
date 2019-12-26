@@ -4,6 +4,7 @@
 #exec --no-startup-id ~/.screenlayout/just_main_2560.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id autorandr -c
+exec_always --no-startup-id imwheel
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
